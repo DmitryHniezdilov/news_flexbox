@@ -1,0 +1,129 @@
+/*** Навигация в футере***/
+.footer-nav {
+    width: 100%;
+    height: auto;
+    padding: 60px 0 50px;
+
+    &__inner {
+        display: flex;
+        margin: 0 -15px;
+        flex-flow: row nowrap;
+        justify-content: center;
+        list-style: none;
+
+        @media screen and (max-width: 1020px) {
+            flex-flow: column wrap;
+            align-items: center;
+        }
+
+    }
+
+    &__cat {
+        flex: 0 0 20%;
+        padding: 0 15px;
+        font-size: 0;
+
+        @media screen and (max-width: 1020px) {
+            flex: 0 0 100%;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        position: relative;
+        margin-bottom: 12px;
+        font-family: 'Segoe UI SemiВold', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #ffffff;
+        text-align: left;
+        transition: all .3s linear;
+
+        @media screen and (max-width: 1020px) {
+            text-align: center;
+            cursor: pointer;
+        }
+
+        &:hover {
+            @media screen and (max-width: 1020px) {
+                text-decoration: underline;
+                transition: all .3s linear;
+            }
+        }
+
+        &::after {
+            @media screen and (max-width: 1020px) {
+                content: "";
+                margin-left: 10px;
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                position: relative;
+                bottom: 3px;
+                border-bottom: 2px solid #ffffff;
+                border-left: 2px solid #ffffff;
+                transform: rotate(-45deg);
+                transition: all .3s linear;
+            }
+        }
+    }
+
+    &__list {
+        list-style: none;
+        font-size: 0;
+        transition: all .8s linear;
+
+        @media screen and (max-width: 1020px) {
+            max-height: 0;
+            overflow: hidden;
+            max-width: 230px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        font-family: 'Segoe UI', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #ffffff;
+        text-align: left;
+        text-decoration: none;
+        transition: .3s ease;
+
+        &:hover {
+            text-decoration: underline;
+            transition: .3s ease;
+        }
+    }
+}
+
+/* Появление вложенной навигации */
+.footer-nav__title.is-active + .footer-nav__list {
+    @media screen and (max-width: 1020px) {
+        max-height: 100vh;
+        transition: all 1s linear;
+    }
+}
+
+/* Поворот стрелки */
+.footer-nav__title.is-active::after {
+    @media screen and (max-width: 1020px) {
+        bottom: -2px;
+        transform: rotate(-225deg);
+        transition: all .3s linear;
+    }
+}
+
+/* Подчеркивание активного имени */
+.footer-nav__title.is-active {
+    @media screen and (max-width: 1020px) {
+        text-decoration: underline;
+        transition: all .3s linear;
+    }
+}

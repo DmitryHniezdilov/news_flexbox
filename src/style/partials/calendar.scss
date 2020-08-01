@@ -1,0 +1,22 @@
+/*** Календарь ***/
+.calendar {
+    font-size: 0;
+
+    &__title {
+        width: 100%;
+        margin-bottom: 10px;
+        font-family: 'Segoe UI Bold', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: #139CE9;
+        text-align: center;
+    }
+
+    &__cap {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}

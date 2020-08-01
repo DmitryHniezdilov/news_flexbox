@@ -1,0 +1,63 @@
+/*Promo*/
+.promo {
+
+    &__link {
+        margin-bottom: 30px;
+        text-decoration: none;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover .promo__title {
+            background-color: #48a8dd;
+            transition: .3s;
+        }
+
+        &:hover> .promo__img-wrap::before {
+            background-color: rgba(19,156,233,.3);
+            transition: .3;
+        }
+    }
+
+    &__title {
+        width: 100%;
+        min-height: 42px;
+        padding: 5px 12px;
+        display: flex;
+        align-items: center;
+        font-family: 'Segoe UI', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: left;
+        line-height: 16px;
+        color: #FFFFFF;
+        background-color: #139CE9;
+        transition: .3s;
+    }
+
+    &__img-wrap {
+        display: block;
+        height: 165px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(19,156,233,0.1);
+            transition: .3s;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

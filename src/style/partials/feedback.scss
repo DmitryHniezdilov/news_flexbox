@@ -1,0 +1,128 @@
+/* Блок формы ( обратная связь ) */
+.feedback {
+    width: 100%;
+    height: auto;
+    background: url(../img/feedback-bcg.jpg) center center no-repeat;
+    background-size: cover;
+
+    &__top {
+        width: 100%;
+        padding: 40px 0 30px;
+        background: rgba(64, 64, 64, 0.5);
+    }
+
+    &__title {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        font-family: 'Segoe UI SemiВold', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        color: #FFFFFF;
+        text-decoration: none;
+        text-align: center;
+        background-color: transparent;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: calc( 50% - 113px );
+            height: 2px;
+            background: #828282;
+
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: calc( 50% - 113px );
+            height: 2px;
+            background: #828282;
+
+        }
+
+        &--long {
+            &::before {
+                width: calc( 50% - 181px );    
+            }
+
+            &::after {
+                width: calc( 50% - 181px );   
+            }
+        }
+    }
+
+    &__socials-wrap {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        text-align: center;
+    }
+
+    &__socials-list {
+        display: inline-block;
+        margin: -30px -30px 0 0;
+        text-align: center;
+        list-style: none;
+        font-size: 0;
+        
+    }
+
+    &__socials-item {
+        display: inline-block;
+        margin: 30px 30px 0 0;
+        font-size: 0;
+        vertical-align: middle;
+    }
+
+    &__socials {
+        display: block;
+        font-size: 0;
+        text-decoration: none;
+
+        &:hover .feedback__icon-bcg{
+            fill: #ffffff;
+            transition: all .3s;
+        }
+
+        &:hover .feedback__icon-path {
+            fill: #139CE9;
+            transition: all .3s;
+        }
+    }
+
+    &__icon {
+        width: 83px;
+        height: 83px;
+
+        @media screen and (max-width: 767px) {
+            width: 60px;
+            height: 60px;
+        }
+
+        &-bcg {
+            transition: all .3s;
+        }
+
+        &-path {
+            transition: all .3s;
+        }
+    }
+
+
+    &__form {
+        width: 100%;
+        padding: 60px 30px 170px;
+    }
+
+    &__form-inner {
+        margin: 0 auto;
+        max-width: 754px;
+    }
+}

@@ -1,0 +1,24 @@
+// *** Подключение шрифтов ***
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../../fonts/SegoeUI.woff2') format('woff2'),
+    url('../../fonts/SegoeUI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI SemiВold';
+    src: url('../../fonts/SegoeUI-SemiBold.woff2') format('woff2'),
+    url('../../fonts/SegoeUI-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Вold';
+    src: url('../../fonts/SegoeUI-Bold.woff2') format('woff2'),
+    url('../../fonts/SegoeUI-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}

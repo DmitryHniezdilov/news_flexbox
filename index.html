@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iile-news</title>
+    <link rel="stylesheet" lang="" href="lib/swiper.min.css">
+    <link rel="stylesheet" lang="" href="build/css/main.css">
+
+</head>
+<body>
+<div class="wrapper">
+    <!--/*header*/-->
+    <div class="header">
+        <div class="header__inner center">
+            <div class="header__logo">
+                <a href="#" class="logo">
+                    <img class="logo__img" src="build/img/logo.png" alt="Институт международного права и экономики А.С. Грибоедова" title="Институт международного права и экономики А.С. Грибоедова">
+                    <div class="logo__inner">
+                        <h1 class="logo__title">Институт международного права и экономики А.С.&nbsp;Грибоедова</h1>
+                        <span class="logo__desc">основан в 1993 г.</span>
+                    </div>
+                </a>
+            </div>
+            <div class="header__right">
+                <!-- /* навигация */ -->
+                <div class="header__wrap-nav nav">
+                    <button class="nav__btn js-btn">
+                    </button>
+                    <nav class="nav__drop js-drop">
+                        <ul class="nav__list">
+                            <li class="nav__item ">
+                                <a href="#" class="nav__link">Об институте</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Обучение</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Научная деятельность</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Абитуриентам</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Факультеты</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Филиалы</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Новости</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /* смена языка */ -->
+                <div class="header__wrap-lang lang">
+                    <a href="#" class="lang__text lang__link lang-active">ru</a>
+                    <span class="lang__text">/</span>
+                    <a href="#" class="lang__text lang__link">en</a>
+                </div>
+                <!-- /* меню */ -->
+                <nav class="header__wrap-menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item ">
+                            <a href="#" class="menu__link">Личный кабинет абитуриента</a>
+                        </li>
+                        <li class="menu__item menu__item--order">
+                            <a href="#" class="menu__link">Личный кабинет студента/преподавателя</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Версия для слабовидящих</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /* форма поиска */ -->
+                <form id="form-search" class="header__wrap-form search-group" action="/" method="post">
+                        <input class="search-group__input" id="search" name="search" title="Введите запрос"
+                                placeholder="" required type="search" minlength="3" maxlength="30">
+                        <button type="submit" class="search-group__btn" title="Поиск" name="submit"></button>
+                </form>
+   
+            </div>
+        </div>
+    </div>
+    <!-- /*info*/ -->
+    <section class="info">
+        <div class="info__inner center">
+            <ul class="info__list">
+                <li class="info__item info__item--desc"><a href="#" class="info__desc">Сведения об образовательной организации</a></li>
+                <li class="info__item"><span class="info__contact info__contact--tel">7 (495) 673-74-17</span></li>
+                <li class="info__item"><span class="info__contact info__contact--tel">7 (495) 673-73-74</span></li>
+                <li class="info__item"><span class="info__contact info__contact--let">pk_impe@adm.iil.ru</span></li>
+                <li class="info__item info__item--soc">
+                    <a href="#" class="info__socials info__socials--fb"></a>
+                    <a href="#" class="info__socials info__socials--inst"></a>
+                    <a href="#" class="info__socials info__socials--vk"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- /*banner*/ -->
+    <picture class="banner">
+        <source class="banner__img" srcset="build/img/banner-img.webp" type="image/webp">
+        <img class="banner__img" src="build/img/banner-img.jpg" alt="Институт международного права и экономики А.С. Грибоедова">
+    </picture>
+    <!-- /*main*/ -->
+    <main class="main">
+        <h2 class="main__title">Новости</h2>
+        <div class="main__inner center">
+            <div class="main__top">
+                <!-- /* боковая колонка */ -->
+                <div class="main__aside">
+                    <div class="main__aside-row">
+                        <div class="main__aside-col">
+                            <div class="calendar">
+                                <h4 class="calendar__title">Календарь новостей</h4>
+                                <img src="build/img/calendar-cap.jpg" alt="Заглушка календаря" class="calendar__cap">
+                            </div>
+                        </div>
+                        <div class="main__aside-col">
+                            <div class="promo">
+                                <a href="#"  class="promo__link">
+                                    <h5 class="promo__title">СТАНЬ ВОЛОНТЕРОМ МУЗЕЯ ПОБЕДЫ</h5>
+                                    <picture class="promo__img-wrap">
+                                        <source class="promo__img" srcset="build/img/promo-1.webp" type="image/webp">
+                                        <img class="promo__img" src="build/img/promo-1.jpg" alt="promo__img">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__aside-col">
+                            <div class="promo">
+                                <a href="#"  class="promo__link">
+                                    <h5 class="promo__title">ПАРТНЕРСКАЯ<br>ЭЛЕКТРОННО-БИБЛИОТЕЧНАЯ СИСТЕМА</h5>
+                                    <picture class="promo__img-wrap">
+                                        <source class="promo__img" srcset="build/img/promo-2.webp" type="image/webp">
+                                        <img class="promo__img" src="build/img/promo-2.jpg" alt="promo__img">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /* новости */ -->
+                <div class="main__news">
+                    <div class="main__news-row">
+                        <div class="main__news-col">
+                            <div class="news-card">
+                                <div class="news-card__wrap">
+                                    <picture class="">
+                                        <source class="news-card__img" srcset="build/img/news-1.webp" type="image/webp">
+                                        <img class="news-card__img" src="build/img/news-1.jpg" alt="image slide">
+                                    </picture>
+                                    <h4 class="news-card__title">К 225-летию А.С.Грибоедова</h4>
+                                    <p class="news-card__desc">Студенты узнали новые факты о жизни великого литератора и дипломата.</p>
+                                    <div class="news-card__bottom">
+                                        <span class="news-card__date">03.03.2020 г.</span>
+                                        <a href="#" class="news-card__link">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__news-col">
+                            <div class="news-card">
+                                <div class="news-card__wrap">
+                                    <picture class="">
+                                        <source class="news-card__img" srcset="build/img/news-2.webp" type="image/webp">
+                                        <img class="news-card__img" src="build/img/news-2.jpg" alt="image slide">
+                                    </picture>
+                                    <h4 class="news-card__title">Внимание, собрание!</h4>
+                                    <p class="news-card__desc">Родительское собрание на экономическом факультете.</p>
+                                    <div class="news-card__bottom">
+                                        <span class="news-card__date">03.03.2020 г.</span>
+                                        <a href="#" class="news-card__link">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__news-col">
+                            <div class="news-card">
+                                <div class="news-card__wrap">
+                                    <picture class="">
+                                        <source class="news-card__img" srcset="build/img/news-4.webp" type="image/webp">
+                                        <img class="news-card__img" src="build/img/news-4.jpg" alt="image slide">
+                                    </picture>
+                                    <h4 class="news-card__title">Научная дискуссия</h4>
+                                    <p class="news-card__desc">Совершенствование современной правотворческой и правоприменительной деятельности.</p>
+                                    <div class="news-card__bottom">
+                                        <span class="news-card__date">03.03.2020 г.</span>
+                                        <a href="#" class="news-card__link">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__news-col">
+                            <div class="news-card">
+                                <div class="news-card__wrap">
+                                    <picture class="">
+                                        <source class="news-card__img" srcset="build/img/news-3.webp" type="image/webp">
+                                        <img class="news-card__img" src="build/img/news-3.jpg" alt="image slide">
+                                    </picture>
+                                    <h4 class="news-card__title">Главное - семья</h4>
+                                    <p class="news-card__desc">Проректор ИМПЭ им. А.С. Грибоедова примет участие в Заседании Комиссии по правовому положению семьи.</p>
+                                    <div class="news-card__bottom">
+                                        <span class="news-card__date">03.03.2020 г.</span>
+                                        <a href="#" class="news-card__link">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__news-col">
+                            <div class="news-card">
+                                <div class="news-card__wrap">
+                                    <picture class="">
+                                        <source class="news-card__img" srcset="build/img/news-2.webp" type="image/webp">
+                                        <img class="news-card__img" src="build/img/news-2.jpg" alt="image slide">
+                                    </picture>
+                                    <h4 class="news-card__title">Внимание, собрание!</h4>
+                                    <p class="news-card__desc">Родительское собрание на экономическом факультете.</p>
+                                    <div class="news-card__bottom">
+                                        <span class="news-card__date">03.03.2020 г.</span>
+                                        <a href="#" class="news-card__link">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__news-col">
+                            <div class="news-card">
+                                <div class="news-card__wrap">
+                                    <picture class="">
+                                        <source class="news-card__img" srcset="build/img/news-4.webp" type="image/webp">
+                                        <img class="news-card__img" src="build/img/news-4.jpg" alt="image slide">
+                                    </picture>
+                                    <h4 class="news-card__title">Научная дискуссия</h4>
+                                    <p class="news-card__desc">Совершенствование современной правотворческой и правоприменительной деятельности.</p>
+                                    <div class="news-card__bottom">
+                                        <span class="news-card__date">03.03.2020 г.</span>
+                                        <a href="#" class="news-card__link">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__news-col">
+                            <div class="news-card">
+                                <div class="news-card__wrap">
+                                    <picture class="">
+                                        <source class="news-card__img" srcset="build/img/news-4.webp" type="image/webp">
+                                        <img class="news-card__img" src="build/img/news-4.jpg" alt="image slide">
+                                    </picture>
+                                    <h4 class="news-card__title">Научная дискуссия</h4>
+                                    <p class="news-card__desc">Совершенствование современной правотворческой и правоприменительной деятельности.</p>
+                                    <div class="news-card__bottom">
+                                        <span class="news-card__date">03.03.2020 г.</span>
+                                        <a href="#" class="news-card__link">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Пагинация -->
+            <div class="main__pagination">
+                <ul class="pagination" role="menubar" aria-label="Pagination">
+                    <li><a href="#"><span>Первая страница</span><svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="pagination__svg-path" d="M7.167 13.445l-5.833-6 5.833-6M15.334 13.444l-5.834-6 5.834-6" stroke="#139CE9" stroke-width="1.111" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+                    <li><a href="#"><span>Предыдущая</span><svg width="10" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="pagination__svg-path" d="M9.333.667l-8 7 8 7" stroke="#139CE9" stroke-width="1.111" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+                    <li class="current"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#"><span>Следующая</span><svg width="10" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="pagination__svg-path" d="M.667 15.333l8-7-8-7" stroke="#139CE9" stroke-width="1.111" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+                    <li><a href="#"><span>Последняя страница</span><svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="pagination__svg-path" d="M8.833.555l5.834 6-5.834 6M.667.556l5.833 6-5.833 6" stroke="#139CE9" stroke-width="1.111" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="main__title">Новости партнеров</h2>
+        <!-- Слайдер -->
+        <div class="main__slider promo-slider center">
+            <div class="swiper-container promo-slider__container">
+                <!-- Слайды -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide promo-slider__slide">
+                        <a href="#" class="promo-slider__link">
+                            <picture class="promo-slider__img-wrap">
+                                <source class="promo-slider__img" srcset="build/img/slide_1.webp" type="image/webp">
+                                <img class="promo-slider__img" src="build/img/slide_1.jpg" alt="image slide 2">
+                            </picture>
+                        </a>                         
+                    </div>
+                    <div class="swiper-slide promo-slider__slide">
+                        <a href="#" class="promo-slider__link">
+                            <picture class="promo-slider__img-wrap">
+                                <source class="promo-slider__img" srcset="build/img/slide_2.webp" type="image/webp">
+                                <img class="promo-slider__img" src="build/img/slide_2.jpg" alt="image slide 1">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="swiper-slide promo-slider__slide">
+                        <a href="#" class="promo-slider__link">
+                            <picture class="promo-slider__img-wrap">
+                                <source class="promo-slider__img" srcset="build/img/slide_3.webp" type="image/webp">
+                                <img class="promo-slider__img" src="build/img/slide_3.jpg" alt="image slide 3">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="swiper-slide promo-slider__slide">
+                        <a href="#" class="promo-slider__link">
+                            <picture class="promo-slider__img-wrap">
+                                <source class="promo-slider__img" srcset="build/img/slide_4.webp" type="image/webp">
+                                <img class="promo-slider__img" src="build/img/slide_4.jpg" alt="image slide 4">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Кнопки навигации -->
+            <button class="promo-slider__btn promo-slider__btn--prev">
+                <svg class="promo-slider__icon" viewBox="0 0 28 66" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="promo-slider__icon-prev" d="M26 65L2 33.28 26 1" stroke-width="3"/></svg>
+            </button>
+            <button class="promo-slider__btn promo-slider__btn--next">
+                <svg class="promo-slider__icon" viewBox="0 0 28 66" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="promo-slider__icon-next" d="M2 65l24-31.72L2 1" stroke-width="3"/></svg>
+            </button>
+
+        </div>
+    </main>
+    <!-- Блок обратной связи -->
+    <section class="feedback">
+        <div class="feedback__top">
+            <h3 class="feedback__title feedback__title--long">Мы в социальных сетях</h3>
+            <div class="feedback__socials-wrap">
+                <ul class="feedback__socials-list">
+                    <li class="feedback__socials-item">
+                        <a href="#" class="feedback__socials">
+                            <svg class="feedback__icon" viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="feedback__icon-bcg" fill="#827F7F" fill-opacity=".8" d="M0 0h83v83H0z"/><path class="feedback__icon-path" d="M24.168 65V14.586H42.52c5.624 0 9.949 1.031 12.972 3.094 3.024 2.062 4.535 4.968 4.535 8.718 0 2.72-.925 5.098-2.777 7.137-1.828 2.04-4.172 3.457-7.031 4.254v.14c3.586.446 6.445 1.77 8.578 3.973 2.156 2.203 3.234 4.887 3.234 8.051 0 4.617-1.652 8.285-4.957 11.004C53.77 63.652 49.258 65 43.54 65H24.168zm11.355-42.047v11.953h4.993c2.343 0 4.183-.562 5.52-1.687 1.358-1.149 2.038-2.719 2.038-4.711 0-3.703-2.765-5.555-8.297-5.555h-4.254zm0 20.39v13.29h6.153c2.625 0 4.676-.61 6.152-1.828 1.5-1.22 2.25-2.883 2.25-4.992 0-2.016-.738-3.598-2.215-4.747-1.453-1.148-3.492-1.722-6.117-1.722h-6.223z" fill="#fff"/></svg>
+                        </a>
+                    </li>
+                    <li class="feedback__socials-item">
+                        <a href="#" class="feedback__socials">
+                            <svg class="feedback__icon" viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="feedback__icon-bcg" fill="#827F7F" fill-opacity=".8" d="M0 0h83v83H0z"/><path class="feedback__icon-path" d="M45.5 33.25v-7c0-1.932 1.568-3.5 3.5-3.5h3.5V14h-7C39.7 14 35 18.7 35 24.5v8.75h-7V42h7v28h10.5V42h7l3.5-8.75H45.5z" fill="#fff"/></svg>
+                        </a>
+                    </li>
+                    <li class="feedback__socials-item">
+                        <a href="#" class="feedback__socials">
+                            <svg class="feedback__icon" viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="feedback__icon-bcg" d="M83 0H0v83h83V0z" fill="#827F7F" fill-opacity=".8"/><path class="feedback__icon-path" d="M69.16 46.85c.323-1.657.494-3.368.494-5.119 0-14.72-11.933-26.652-26.652-26.652-1.751 0-3.462.171-5.119.493a15.307 15.307 0 00-7.757-2.1c-8.496 0-15.383 6.888-15.383 15.384 0 2.83.767 5.478 2.1 7.756a26.785 26.785 0 00-.493 5.119c0 14.72 11.932 26.652 26.652 26.652 1.751 0 3.462-.171 5.119-.493a15.307 15.307 0 007.756 2.1c8.496 0 15.384-6.888 15.384-15.384 0-2.83-.767-5.478-2.1-7.756zM43.509 60.034c-9.47 0-14.205-3.551-15.662-8.013-1.457-4.462 1.73-5.737 2.731-5.828 1.002-.091 3.127.152 3.734 2.003.631 1.925 2.732 5.737 7.285 6.193 4.553.455 7.558-1.64 8.469-3.825.91-2.186-.729-5.19-7.74-6.192-7.012-1.002-14.297-4.098-14.297-11.11s8.013-9.835 15.662-9.835c7.65 0 11.528 4.32 12.385 6.01 1.062 2.095.698 5.585-1.821 6.193-2.641.637-4.007-.82-5.92-4.371-1.977-3.673-9.015-2.732-11.382-.638-2.368 2.095-1.73 5.1 8.104 7.012 9.835 1.912 13.478 5.464 13.478 11.019 0 5.554-5.555 11.382-15.026 11.382z" fill="#fff"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <h3 class="feedback__title">Обратная связь</h3>
+        </div>
+        <div class="feedback__form">
+            <div class="feedback__form-inner">
+                <form id="contact" class="form js-form-observer" action="/" method="post">
+                    <div class="form__group form__group--name">
+                        <input type="text" class="field field--text" id="name" name="name" required placeholder="Имя" title="Введите имя">
+                    </div>
+                    <div class="form__group form__group--email">
+                        <input type="email" class="field field--text" id="email" name="name" required placeholder="E-mail" title="Введите E-mail">
+                    </div>
+                    <div class="form__group">
+                        <textarea class="field field--area" rows="4" cols="40" name="message" id="message" required placeholder="Здравствуйте," title="Введите сообщение"></textarea>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__cap-wrap">
+                            <input type="text" class="field field--cap" id="cap" name="cap" required placeholder="" title="">
+                            <img src="build/img/captcha-cap.jpg" alt="Заглушка капчи" class="form__cap">
+                        </div>
+                    </div>
+                    <input class="button" type="submit" value="Отправить" title="Отправить">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="footer__inner center">
+            <!-- Навигация -->
+            <nav class="footer-nav">
+                <ul class="footer-nav__inner">
+                    <li class="footer-nav__cat">
+                        <h6 class="footer-nav__title js-nav-title">Об институте</h6>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Сведения об образовательной организации</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Государственная аккредитация</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Экспертно-консультативные советы</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Лицензии</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Медицинский пункт</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Ученый совет</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Руководство</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Студенческий совет</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav__cat">
+                        <h6 class="footer-nav__title js-nav-title">Обучение</h6>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Аспирантура</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Бакалавриат</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Дистанционное обучение</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Специалитет</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Магистратура</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Экономическое образование</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Юридическое образование</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Заочное обучение</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Условия для обучения лиц с ОВЗ и инвалидностью</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Дополнительное образование</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Второе высшее образование</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav__cat">
+                        <h6 class="footer-nav__title js-nav-title">Абитуриентам</h6>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Прием документов</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Приказы о зачислении</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Отсрочка от армии</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Скидки в оплате обучения</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Поступление на экономический факультет</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Поступление на факультет лингвистики</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Поступление на факультет журналистики</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Стоимость обучения</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Перевод и восстановление в ИМПЭ им.&nbsp;А.С.&nbsp;Грибоедова</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">ЦЕНТР ПОДГОТОВКИ К ЕГЭ</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Поступление на Факультет юриспруденции</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav__cat">
+                        <h6 class="footer-nav__title js-nav-title">Факультеты</h6>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Экономический факультет</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Факультет лингвистики</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Факультет журналистики</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Юридический факультет</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Кафедра «Гуманитарно&#8209;педагогические и естественнонаучные дисциплины»</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Кафедра международного права</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Кафедра иностранных языков им.&nbsp;Т.М.&nbsp;Десятковой</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav__cat">
+                        <h6 class="footer-nav__title js-nav-title">Филиалы</h6>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Калуга</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Липецк</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Нижневартовск</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Ульяновск</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Вологда</a></li>                 
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__inner center">
+                <div class="footer__group-wrap">
+                    <div class="footer__group">
+                        <div class="footer__group-inner footer__group-inner--link">
+                            <a href="#" class="footer__link">Лицензия на осуществление образовательной деятельности</a>
+                            <a href="#" class="footer__link">Свидетельство о государственной аккредитации</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__group-wrap">
+                    <div class="footer__group">
+                        <div class="footer__group-inner footer__group-inner--text">
+                            <span class="footer__text">1998 - 2020 © ИМПЭ имени А.С.&nbsp;ГРИБОЕДОВА</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__group-wrap">
+                    <div class="footer__group">
+                        <div class="footer__group-inner footer__group-inner--text">
+                            <span class="footer__text">111024, Москва, шоссе Энтузиастов, д.21</span>
+                            <span class="footer__text">+7 (495) 673 74 17</span>
+                            <span class="footer__text">+7 (495) 673 73 74</span>
+                            <span class="footer__text">pk_impe@adm.iile.ru</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="lib/swiper.min.js"></script>
+<script src="build/js/main.js"></script>
+</body>
+</html>

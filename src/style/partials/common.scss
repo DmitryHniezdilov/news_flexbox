@@ -1,0 +1,22 @@
+// *** Общие стили ***
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+picture {
+    font-size: 0;
+}
+
+.wrapper {
+    width: 100%;
+    background: #E5E5E5;
+    overflow: hidden;
+}
+
+.center {
+    max-width: 1260px;
+    margin: 0 auto;
+}

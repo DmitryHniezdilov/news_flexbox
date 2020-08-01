@@ -1,0 +1,127 @@
+/*Слайдер*/
+.promo-slider {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+
+    &__container {
+        flex-grow: 1;
+        width: 100%;
+        height: 134px;
+    }
+
+    &__slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(19,156,233,0.1);
+            transition: .3s;
+        }
+
+        &:hover::before {
+            background-color: rgba(19,156,233,.3);
+            transition: .3s;
+        }
+    }
+
+    &__img-wrap {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__btn {
+        width: 35px;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 0;
+
+        @media screen and (max-width: 1050px) {
+            width: 25px;
+        }
+
+        &--prev {
+            margin-right: 20px;
+            order: -1;
+            justify-content: flex-start;
+
+            @media screen and (max-width: 1270px) {
+                margin: 0 10px;
+            }
+
+            @media screen and (max-width: 1050px) {
+                margin: 0 5px;
+            }
+
+            &:hover .promo-slider__icon-prev {
+                stroke: #139CE9;
+                transition: all .3s;
+            }
+
+        }
+
+        &--next {
+            margin-left: 20px;
+            order: 1;
+            justify-content: flex-end;
+
+            @media screen and (max-width: 1270px) {
+                margin: 0 10px;
+            }
+
+            @media screen and (max-width: 1050px) {
+                margin: 0 5px;
+            }
+
+            &:hover .promo-slider__icon-next {
+                stroke: #139CE9;
+                transition: all .3s;
+            }
+        }
+    }
+
+    &__icon {
+        transition: all .6s;
+        width: 28px;
+        height: auto;
+
+        @media screen and (max-width: 1050px) {
+            width: 18px;
+            height: auto;
+        }
+
+        &-prev {
+            stroke: #AFB3BB;
+            transition: all .3s;
+        }
+
+        &-next {
+            stroke: #AFB3BB;
+            transition: all .3s;
+        }
+    }
+}
